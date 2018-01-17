@@ -1,0 +1,119 @@
+body, html {
+  height: 100%; }
+
+body {
+  background: url(/images/ecshop-bg.png);
+  background-size: cover;
+  font-size: 12px; }
+  body .login-hd {
+    background: none;
+    height: 44px;
+    padding: 40px 0 40px 50px; }
+  body .center-warp {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 475px;
+    margin: auto auto;
+    transform: translateY(-50%); }
+    body .center-warp .login-center {
+      width: 380px;
+      margin: 0 auto; }
+      body .center-warp .login-center .bd-logo img {
+        width: 248px;
+        height: 65px;
+        margin-left: 66px; }
+    body .center-warp .z-bd {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 42px;
+      height: 350px;
+      background: url(/images/icloud-bar.png) no-repeat 0 bottom;
+      margin-top: 50px; }
+      body .center-warp .z-bd .login-panel {
+        position: absolute;
+        left: 16px;
+        z-index: 2;
+        width: 302px;
+        height: 321px;
+        background: #fff;
+        background: rgba(255, 255, 255, 0.85);
+        border: none;
+        border-radius: 0;
+        color: #A1A1A1;
+        padding: 5px 70px 25px;
+        overflow: hidden;
+        box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.3);
+        height: 322px; }
+        body .center-warp .z-bd .login-panel .panel-hd {
+          padding-bottom: 10px;
+          line-height: 1;
+          font-size: 18px;
+          margin: 18px 0;
+          text-align: center;
+          font-weight: normal; }
+        body .center-warp .z-bd .login-panel .controls {
+          position: relative;
+          height: 51px;
+          border-left: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          border-bottom: 1px solid #ddd; }
+          body .center-warp .z-bd .login-panel .controls .iconphone {
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            z-index: 10; }
+          body .center-warp .z-bd .login-panel .controls input {
+            border: none;
+            background-color: #fff;
+            color: #8a8a8a;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            text-indent: 50px; }
+          body .center-warp .z-bd .login-panel .controls .first {
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            border-top: 1px solid #ddd; }
+          body .center-warp .z-bd .login-panel .controls .third {
+            border-radius: 0 0 5px 5px;
+            overflow: hidden; }
+          body .center-warp .z-bd .login-panel .controls .btn-a {
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            display: block;
+            color: #FFF;
+            font-size: 16px;
+            line-height: 51px;
+            text-align: center;
+            background-color: #fc7878;
+            border: 0;
+            border-radius: 4px;
+            letter-spacing: 4px;
+            text-indent: 0px; }
+        body .center-warp .z-bd .login-panel .bside {
+          margin-top: 12px;
+          overflow: hidden;
+          height: auto; }
+          body .center-warp .z-bd .login-panel .bside input[type="checkbox"] {
+            float: left;
+            width: 15px;
+            height: 15px;
+            margin: 2px 8px 0 0; }
+          body .center-warp .z-bd .login-panel .bside label {
+            color: #666;
+            float: left; }
+          body .center-warp .z-bd .login-panel .bside .link-forget {
+            float: left;
+            margin-left: 25px; }
+          body .center-warp .z-bd .login-panel .bside a {
+            float: right;
+            display: inline-block;
+            text-align: right; }
+      body .center-warp .z-bd .cl-link-blue {
+        color: #41A5E1 !important; }

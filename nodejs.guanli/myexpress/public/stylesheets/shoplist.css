@@ -1,0 +1,119 @@
+.right {
+  float: left;
+  background: url(/images/body_bj.jpg);
+  padding: 10px;
+  width: 98%;
+  min-width: 773px; }
+  .right h1 {
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: normal;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden; }
+    .right h1 .action-span a {
+      float: right;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 10px 0 23px;
+      background: #c43926 url(/images/icon_add02.gif) no-repeat 6px center;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: normal;
+      text-align: center;
+      cursor: pointer; }
+    .right h1 .action-span a:hover {
+      text-decoration: none;
+      background-color: #ca4d3c; }
+    .right h1 .action-span1 {
+      color: #4c4c4c;
+      font-size: 18px;
+      font-weight: normal; }
+      .right h1 .action-span1 a {
+        color: #333; }
+      .right h1 .action-span1 a:hover {
+        color: #EB8A3D;
+        text-decoration: underline; }
+    .right h1 .help_sub {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
+  .right .form-div {
+    background: #f3f3f3 url("/images/th_bg.gif") repeat-x;
+    border: 1px solid #ddd;
+    padding: 5px;
+    color: #808080;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    line-height: 33px; }
+    .right .form-div img, .right .form-div select {
+      vertical-align: middle; }
+    .right .form-div input {
+      margin-top: 8px; }
+    .right .form-div input.button {
+      padding: 5px 15px 5px;
+      margin: 2px 2px;
+      border: none;
+      background: #ff3f3f;
+      color: #FFF;
+      cursor: pointer;
+      border-radius: 3px; }
+  .right #list {
+    font-size: 12px; }
+    .right #list .list-div {
+      width: 100%;
+      padding: 0; }
+      .right #list .list-div table {
+        width: 100%;
+        background: #ddd; }
+      .right #list .list-div th {
+        line-height: 39px;
+        background: #f3f3f3 url("/images/th_bg.gif") repeat-x;
+        font-style: normal;
+        font-weight: normal;
+        white-space: nowrap;
+        font-size: 12px; }
+        .right #list .list-div th a {
+          color: #111;
+          font-size: 12px; }
+      .right #list .list-div input, .right #list .list-div img {
+        vertical-align: middle;
+        margin-right: 5px; }
+      .right #list .list-div td {
+        background: #fff;
+        padding: 10px;
+        line-height: 39px;
+        font-size: 12px;
+        text-align: center; }
+    .right #list #page-table {
+      width: 100%;
+      background: #FFFFFF; }
+      .right #list #page-table .pagelist #turn-page {
+        text-align: right;
+        padding: 0 10px;
+        line-height: 39px; }
+        .right #list #page-table .pagelist #turn-page #page-link {
+          margin-left: 1em;
+          padding-left: 1em;
+          border-left: 1px solid #999; }
+          .right #list #page-table .pagelist #turn-page #page-link a {
+            color: #192E32; }
+    .right #list #but #selAction {
+      margin-top: 5px; }
+    .right #list #but input.button {
+      padding: 5px 15px 5px;
+      margin: 2px 2px;
+      border: none;
+      background: #ff3f3f;
+      color: #FFF;
+      cursor: pointer;
+      border-radius: 3px; }
+  .right #footer {
+    background: #f3f3f3 url("../images/th_bg.gif") repeat-x;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #9CACAF;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 12px; }

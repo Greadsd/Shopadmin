@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title><%= title %></title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/login.css"/>
+	</head>
+	<body>
+		<div class="login-hd">
+	    	<img src="/images/shopex.png" alt="shopex" class="logo">
+	 	</div>
+	 	<div class="center-warp">
+	 		<div class="login-center">
+		      <div class="bd-logo">
+		        <img src="/images/ecshop-logo.png" width="373" height="103" border="0" alt="ECSHOP">
+		      </div>
+		    </div>
+		    <div class="z-bd">
+			    <div class="login-panel" id="loginPanel">
+			        <h3 class="panel-hd cl-link-blue"></h3>
+			        <div class="controls first">
+			        	<svg class="iconphone" width="20px" height="20px" viewBox="0 0 20 20"></svg>
+			            <input id="username" placeholder="用户名" type="text">
+			        </div>
+			        <div class="controls two active">
+			            <svg class="iconphone" width="20px" height="20px" viewBox="0 0 20 20"></svg>
+			            <input id="password" placeholder="密码" type="password">
+			        </div>
+			        <div class="controls third active">
+			            <svg class="iconphone" width="20px" height="20px" viewBox="0 0 20 20"></svg>
+			            <input name="captcha" class="capital" placeholder="验证码" type="text">
+			            <div class="" style="position: absolute; right: 8px; top: 8px;" id="number_div">
+			            	<img src="" alt="CAPTCHA" onclick="" style="cursor: pointer;" title="换一张" width="102" border="1" height="34">
+			           </div>
+			        </div>
+			        <div class="controls last">
+			           <input class="btn-a"onclick="login()" value="登录" type="button">
+			        </div>
+			        <div class="controls bside" style="border: none">
+			          <input value="1" name="remember" id="remember" type="checkbox">
+			          <label for="remember">保存登录信息</label>
+			          <a class="link-forget cl-link-blue" href="#">忘记密码?</a>
+			          <a class="link-home cl-link-blue" href="#">去店铺首页&gt;&gt;</a>
+			        </div>
+			    </div>
+		    </div>
+	 	</div>
+	</body>
+	<script type="text/javascript" src="/javascripts/jquery-1.11.3.js" ></script>
+	<script type="text/javascript">
+		function login(){
+			$.ajax({
+				type:"get",
+				url:"/api/login",
+				data : {
+					username : username = $("#username").val(),
+					pwd : $("#password").val(),
+				},
+				success : function(res){
+					if(res.code == -109){
+						alert(res.message)
+					}else if(res.code == 1){
+						alert(res.message);
+						location.href = "loginAction";
+					}
+					console.log(res);
+				}
+			});
+		}
+	</script>
+</html>

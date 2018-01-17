@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/shoplist.css"/>
+	</head>
+	<body>
+		<div class="right">
+			<h1>
+				<span class="action-span">
+					<a href="">添加新商品</a>
+				</span>
+				<span class="action-span1">
+					<a href="">ECSHOP 管理中心</a> 
+				</span>
+				<span id="search_id" class="action-span1"> - 商品列表 </span>
+				<!-- 商品管理 -->
+				<span class="help_sub">
+					<a target="_blank" title="商品列表帮助文档" href="#">
+						<img src="/images/jnsy.png">
+					</a>
+				</span>
+				<div style="clear:both"></div>
+			</h1>
+			<div id="shoplist" style="display: block;">
+				<div class="form-div">
+					<form action="">
+						<img src="/images/icon_search.gif" alt="SEARCH" width="26" border="0" height="22">
+						<select name="cat_id">
+							<option value="0" style="width: 160px;height: 21px;">所有分类</option>
+						</select>
+						<select name="brand_id">
+							<option value="0">所有品牌</option>
+						</select>
+						<select name="intro_type">
+							<option value="0">全部</option>
+						</select>
+						<select name="is_on_sale">
+							<option value="0">全部</option>
+						</select>
+						关键字
+						<input name="keyword" size="15" type="text">
+						<input value=" 搜索 " class="button" type="submit">
+					</form>
+				</div>
+				
+				<div id="list">
+					<div id="listDiv" class="list-div">
+						<table border="1" cellspacing="1" cellpadding="3">
+							<tbody>
+								<tr>
+								    <th>
+								      <input onclick="" type="checkbox">
+								      <a href="#" title="点击对列表排序">编号</a>
+								      <img src="/images/sort_desc.gif">   
+								    </th>
+								    <th>
+								    	<a href="#" title="点击对列表排序">商品名称</a>
+								    </th>
+								    <th>
+								    	<a href="#" title="点击对列表排序">货号</a>
+								    </th>
+								    <th><a href="#">价格</a></th>
+								    <th><a href="#">上架</a></th>
+								    <th><a href="#">精品</a></th>
+								    <th><a href="#">新品</a></th>
+								    <th><a href="#">热销</a></th>
+								    <th><a href="#">推荐排序</a></th>
+							        <th><a href="#">库存</a></th>
+							        <th><a href="#">虚拟销量</a></th>
+								    <th>操作</th>
+								</tr>
+							
+							</tbody>
+						</table>
+						
+						<!-- 分页 -->
+						<div id="page-table">
+							<div class="pagelist">
+								<div id="turn-page">
+							                         总计  <span id="totalRecords"></span>
+							                        个记录分为 <span id="totalPages"></span>
+								            页当前第 <span id="pageCurrent">1</span>
+								            页，每页 <input size="3" id="pageSize" value="4" onkeypress="" type="text">
+								        <span id="page-link">
+								          <a class="zore" href="#">第一页</a>
+								          <a class="jian" href="#">上一页</a>
+								          <a class="jia" href="#">下一页</a>
+								          <a href="#">最末页</a>
+								          <select id="gotoPage" onchange="#">
+								            <option value="1">1</option>          										  </select>
+								        </span>
+							      </div>
+							</div>
+						</div>
+					</div>
+					<div id="but">
+						<select name="type" id="selAction" onchange="changeAction()">
+						    <option value="">请选择...</option>
+						    <option value="trash">回收站</option>
+						    <option value="on_sale">上架</option>
+						    <option value="not_on_sale">下架</option>
+						    <option value="best">精品</option>
+						    <option value="not_best">取消精品</option>
+						    <option value="new">新品</option>
+						    <option value="not_new">取消新品</option>
+						    <option value="hot">热销</option>
+						    <option value="not_hot">取消热销</option>
+						    <option value="move_to">转移到分类</option>
+							    
+	  					</select>
+	  					<input value=" 确定 " id="btnSubmit" name="btnSubmit" class="button" disabled="true" type="submit">
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				共执行 7 个查询，用时 0.023592 秒，Gzip 已禁用，内存占用 3.547 MB<br>
+				版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="/javascripts/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="/javascripts/update.js" ></script>
+	<script type="text/javascript" src="javascripts/getgoods.js" ></script>
+	
+</html>

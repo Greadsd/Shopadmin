@@ -1,0 +1,224 @@
+
+
+header{
+    width: 100%;
+    height: 117px;
+    border-bottom: 1px solid #000;
+    font-size: 12px;
+    .navtop{
+        height: 76px;
+        width: 100%;
+        background: #303030;
+        .logo{
+            margin-left: 30px;
+            margin-top: 20px;
+            width: 262px;
+            height: 45px;
+            float: left;
+        }
+        ul{
+            float: right;
+            li{
+                float: left;
+                width: 82px;
+                a{
+                    text-align: center;
+                    height: 67px;
+                    width: 100%;
+                    padding-top: 8px;
+                    display: block;
+                    text-decoration: none;
+                    color: #FFF;
+                    span {
+                        margin-top: 6px;
+                        display: block;
+                    }
+                }
+                img{
+                    margin: auto;
+                    display: block;
+                    height: 35px;
+                }
+                a:hover{
+                    background: #404040;;
+                }
+            }
+        }
+    }
+    .nav{
+        height: 41px;
+        width: 100%;
+        background: #575757;
+        ul{
+            height: 100%;
+            margin-left: 20px;
+            li {
+                float: left;
+                display: block;
+                height: 41px;
+                line-height: 41px;
+                position: relative;
+                a{
+                    font-size: 12px;
+                    float: left;
+                    color: #FFF;
+                    padding: 0px 8px;
+                    display: block;
+                    text-decoration: none;
+                    span{margin-left: 10px;}
+                    .index{
+                        margin-top: 10px;
+                    }
+                    .num{
+                        width: 32px;
+                        height: 16px;
+                        background: url(/images/index-11_22.png) no-repeat scroll;
+                        display: inline-block;
+                        line-height: 16px;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                }
+                a:hover{
+                    background: #454545;;
+                }
+                .muneFG{
+                    height: 13px;
+                    width: 0px;
+                    border-right: 1px solid #656565;
+                    margin-top: 15px;
+                    *margin-top: -18px;
+                    border-left: 1px solid #303030;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+section{
+    width: 100%;
+    height:auto;
+    background: #303030;
+    overflow: hidden;
+    .left{
+        width: 180px;
+        height: 82.5%;
+        overflow-y: auto;
+        float: left;
+        #tabbar-div {
+            padding-left: 10px;
+            height: 34px;
+            padding-top: 0px;
+            background: #303030;
+            P{
+                margin: 1px 0 0 0;
+                .tab-front {
+                    line-height: 33px;
+                    font-weight: bold;
+                    padding: 4px 15px 4px 18px;
+                    cursor: hand;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-family: "微软雅黑";
+                    color: #fff;
+                }
+            }
+        }
+        #menu-list{
+            font-size: 12px;
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                color: #335B64;
+            }
+            li{
+                cursor: pointer;
+                a{
+                    display: block;
+                    width: 100%;
+                }
+                .menu-item {
+                    font-size: 12px;
+                    height: 30px;
+                    line-height: 30px;
+                    display: block;
+                    font-weight: normal;
+                    background: #575757;
+                    
+                }
+                .menu-item:hover{
+                    background: #797979;
+                }
+            }
+            .collapse, .explode {
+                text-indent: 40px;
+                display: block;
+                border-top: #7f7f7f 1px solid;
+                width: 100%;
+                color: #FFF;
+                line-height: 42px;
+                text-align: left;
+            }
+            .ico_1 {
+                background: #575757 url(/images/menu_1.png) 9px 0 no-repeat;
+            }
+            .ico_2{
+                background: #575757 url(/images/menu_2.png) 9px 0 no-repeat;
+            }
+            .ico_3 {
+                background: #575757 url(/images/menu_3.png) 9px 0 no-repeat;
+            }
+            .ico_4 {
+                background: #575757 url(/images/menu_4.png) 9px 0 no-repeat;
+            }
+            .ico_5 {
+                background: #575757 url(/images/menu_5.png) 9px 0 no-repeat;
+            }
+            .ico_6 {
+                background: #575757 url(/images/menu_6.png) 9px 0 no-repeat;
+            }
+            .ico_7 {
+                background: #575757 url(/images/menu_7.png) 9px 0 no-repeat;
+            }
+            .ico_8 {
+                background: #575757 url(/images/menu_8.png) 9px 0 no-repeat;
+            }
+            .ico_9 {
+                background: #575757 url(/images/menu_9.png) 9px 0 no-repeat;
+            }
+            .ico_10{
+                background: #575757 url(/images/menu_10.png) 9px 0 no-repeat;
+            }
+            .ico_11{
+                background: #575757 url(/images/menu_11.png) 9px 0 no-repeat;
+            }
+            .ico_12{
+                background: #575757 url(/images/menu_12.png) 9px 0 no-repeat;
+            }
+            .ico_13{
+                background: #575757 url(/images/menu_13.png) 9px 0 no-repeat;
+            }
+            .ico_14{
+                background: #575757 url(/images/menu_14.png) 9px 0 no-repeat;
+            }
+            .ico_15{
+                background: #575757 url(/images/menu_15.png) 9px 0 no-repeat;
+            }
+            .ico_16{
+                background: #575757 url(/images/menu_15.png) 9px 0 no-repeat;
+            }
+        }
+    }
+    .tl{
+        width: 10px;
+        height: 83%;
+        float: left;
+        background: #303030;
+    }
+    iframe{
+        width: 84.5%;
+        height: 83%;
+    }
+}

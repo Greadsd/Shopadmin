@@ -1,0 +1,139 @@
+.right {
+  float: left;
+  background: url(/images/body_bj.jpg);
+  padding: 10px;
+  width: 98%;
+  min-width: 773px; }
+  .right h1 {
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: normal;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden; }
+    .right h1 .action-span a {
+      float: right;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 10px 0 23px;
+      background: #c43926 url(/images/icon_add02.gif) no-repeat 6px center;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: normal;
+      text-align: center;
+      cursor: pointer; }
+    .right h1 .action-span a:hover {
+      text-decoration: none;
+      background-color: #ca4d3c; }
+    .right h1 .action-span1 {
+      color: #4c4c4c;
+      font-size: 18px;
+      font-weight: normal; }
+      .right h1 .action-span1 a {
+        color: #333; }
+      .right h1 .action-span1 a:hover {
+        color: #EB8A3D;
+        text-decoration: underline; }
+    .right h1 .help_sub {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
+  .right .tab-div {
+    background: #f3f3f3;
+    border: 1px solid #d7d7d7;
+    margin: 0 0 10px 0;
+    padding: 1px; }
+    .right .tab-div #tabbar-div {
+      margin-top: 0px;
+      background: #efefef;
+      padding-left: 10px;
+      height: 39px; }
+      .right .tab-div #tabbar-div p {
+        margin: 2px 0 0 0; }
+        .right .tab-div #tabbar-div p .tab-front {
+          background: #fefefe;
+          height: 39px;
+          line-height: 39px;
+          display: block;
+          float: left;
+          padding: 0 20px;
+          text-align: center;
+          font-weight: bold;
+          cursor: pointer; }
+        .right .tab-div #tabbar-div p .tab-back {
+          padding: 0 20px;
+          text-align: center;
+          font-size: 13px;
+          float: left;
+          display: block;
+          float: left;
+          color: #787878;
+          line-height: 39px;
+          cursor: pointer; }
+    .right .tab-div #tabbody-div {
+      padding: 10px;
+      background: #fefefe; }
+      .right .tab-div #tabbody-div form {
+        font-size: 12px;
+        padding: 0;
+        margin: 0; }
+        .right .tab-div #tabbody-div form input, .right .tab-div #tabbody-div form select {
+          margin: 3px 0; }
+        .right .tab-div #tabbody-div form span.require-field {
+          margin-left: 1em;
+          font-size: 12px;
+          color: #FF0000; }
+        .right .tab-div #tabbody-div form .notice-span {
+          color: #666; }
+        .right .tab-div #tabbody-div form span {
+          font-size: 12px; }
+        .right .tab-div #tabbody-div form tr {
+          font-size: 12px; }
+        .right .tab-div #tabbody-div form td.label {
+          text-align: right;
+          vertical-align: top;
+          font-weight: bold;
+          padding: 5px 1em;
+          width: 30%;
+          font-size: 12px;
+          line-height: 30px; }
+        .right .tab-div #tabbody-div form a.special {
+          font-size: 12px;
+          color: #666666;
+          margin: 0 5px;
+          padding: 1px 5px;
+          *padding: 2px 5px 0;
+          border: 1px solid #91C4D0;
+          border-right: 2px solid #278296;
+          border-bottom: 2px solid #278296;
+          background: #DDEEF2;
+          text-decoration: none;
+          font-weight: 400; }
+        .right .tab-div #tabbody-div form .button-div {
+          text-align: center;
+          padding: 3px 0; }
+      .right .tab-div #tabbody-div img {
+        vertical-align: middle; }
+    .right .tab-div div.button-div {
+      text-align: center; }
+      .right .tab-div div.button-div input.button {
+        padding: 5px 15px 5px;
+        margin: 2px 2px;
+        border: none;
+        background: #ff3f3f;
+        color: #FFF;
+        cursor: pointer;
+        border-radius: 3px; }
+    .right .tab-div .active {
+      display: block; }
+    .right .tab-div .activet {
+      display: none; }
+  .right #footer {
+    background: #f3f3f3 url("../images/th_bg.gif") repeat-x;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #9CACAF;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 12px; }

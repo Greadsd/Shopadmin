@@ -1,0 +1,484 @@
+<html>
+	<head>
+		<title><%= title %></title>
+		<meta charset="utf-8"/>
+	</head>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/public.css"/>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/loginAction.css"/>
+	<body>
+		<header>
+			<div class="navtop">
+				<div class="logo">
+					<img src="/images/topLogo.png"/>
+				</div>
+				
+				<ul>
+					<li style="width: 102px;border-left: none;">
+						<a href="#"style="color: #ff0;">
+							<img src="/images/topmune_09.png"/>
+							<span>更多模板堂产品</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_01.png"/>
+							<span>开店向导</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_02.png"/>
+							<span>记事本</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_03.png"/>
+							<span>刷新</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_04.png"/>
+							<span>个人设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_05.png"/>
+							<span>管理员留言</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_06.png"/>
+							<span>查看网店</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_007.png"/>
+							<span>帮助</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_07.png"/>
+							<span>关于ECSHOP</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/qingchu.png"/>
+							<span>清除缓存</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_08.png"/>
+							<span>退出</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">
+							<img class="index" src="/images/index-11_07.png"/>
+							<span>起始页</span>
+						</a>
+						<span class="muneFG"></span>
+					</li>
+					<li>
+						<a href="#">
+							<img class="index" src="/images/index-11_41.png"/>
+							<span>设置导航栏</span>
+						</a>
+						<span class="muneFG"></span>
+					</li>
+					<li>
+						<a href="#">
+							<img class="index" src="/images/index-11_09.png"/>
+							<span>商品管理</span>
+							<span class="num">6</span>
+						</a>
+						<span class="muneFG"></span>
+					</li>
+					<li>
+						<a href="#">
+							<img class="index" src="/images/dd.png"/>
+							<span>订单管理</span>
+							<span class="num">0</span>
+						</a>
+						<span class="muneFG"></span>
+					</li>
+					<li>
+						<a href="#">
+							<img class="index" src="/images/index-11_13.png"/>
+							<span>广告管理</span>
+							<span class="num">0</span>
+						</a>
+						<span class="muneFG"></span>
+					</li>
+					<li>
+						<a href="#">
+							<img class="index" src="/images/index-11_19.png"/>
+							<span>用户评论</span>
+							<span class="num">0</span>
+						</a>
+						<span class="muneFG"></span>
+					</li>
+					<li>
+						<a href="#">
+							<span>商品列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>订单列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>用户评论</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>会员列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>商店设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>移动版</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section>
+			<div class="left">
+				<div id="tabbar-div">
+					<p>
+					  <span class="tab-front" id="menu-tab">导航菜单</span>
+					</p>
+				</div>
+				<div id="menu-list">
+					<ul id="menu-ul">
+						<li class="collapse lis ico_1">
+							<a href="#">商品管理</a>
+							<ul style="display: none;">
+					          <li onclick="shoplist()" class="menu-item">
+					          	<a href="javascript:;">商品列表</a>
+					          </li>
+					          <li onclick="tonyong()" class="menu-item">
+					          	<a href="javascript:;">添加新商品</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">商品类型</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">商品回收站</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">图片批量处理</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">商品批量上传</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">商品批量导出</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">商品批量修改</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">生成商品代码</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">标签管理</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">虚拟商品列表</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">添加虚拟商品</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">更改加密串</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="#">商品自动上下架</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_2">
+							<a href="#">促销管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_3">
+							<a href="#">订单管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_4">
+							<a href="#">广告管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_5">
+							<a href="#">报表统计</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_6">
+							<a href="#">文章管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_7">
+							<a href="#">会员管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_8">
+							<a href="#">权限管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_9">
+							<a href="#">系统设置</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_10">
+							<a href="#">模板管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_11">
+							<a href="#">数据库管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_12">
+							<a href="#">短信管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_13">
+							<a href="#">推荐管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_14">
+							<a href="#">邮箱群发管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_15">
+							<a href="#">移动版管理</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+						<li class="collapse lis ico_16">
+							<a href="#">模板堂知识库</a>
+							<ul style="display: none;">
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品分类</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">用户评论</a>
+					          </li>
+					          <li class="menu-item">
+					          	<a href="javascript:;">商品品牌</a>
+					          </li>
+					        </ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tl">
+				<a href="javascript:void(0);">
+					<img src="/images/arrow_left.gif" id="img" width="10" border="0" height="30">
+				</a>
+			</div>
+			<frameset >
+				<iframe src="./shoplist"> </iframe>
+			</frameset>
+		</section>
+	</body>
+	<script type="text/javascript" src="/javascripts/jquery-1.11.3.js" ></script>
+	<script type="text/javascript">
+		function shoplist(){
+			$("iframe").attr({src : "./shoplist"});
+		}
+		function tonyong(){
+			$("iframe").attr({src : "./tonyong"});
+		}
+	</script>
+	<script type="text/javascript">
+		function men(){
+			var num = 1;
+			$("#menu-list #menu-ul >li").each(function(index,value){
+				value.index = 0;
+				$(this).children("a").click(function(){
+					var ind = index + 1;
+					if(value.index % 2){
+						
+						$(this).parent().children("ul").css({display : "none"})				
+						$(this).parent().css({"background": "#575757 url(/images/menu_"+ind+".png) 9px 0 no-repeat"})
+					}else{
+						$(this).parent().children("ul").css({display : "block"})
+						$(this).parent().css({"background": "#575757 url(/images/menu1_"+ind+".png) 9px 0 no-repeat"})
+					}
+					value.index ++;
+				})
+			})
+		}
+		men();
+		
+	</script>
+</html>
