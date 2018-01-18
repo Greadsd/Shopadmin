@@ -118,13 +118,13 @@ router.get('/api/delet', function(req, res, next) {
 	})
 })
 
-router.get('/api/update', function(req, res, next) {
-	var goods_name = req.query.goods_name;
-	SaveGoodsModel.find({goods_name : goods_name,goods_id : 1},function(err,docs){
-		//console.log(docs);
-		res.send(docs);
-	})
-})
+//router.get('/api/update', function(req, res, next) {
+//	var goods_name = req.query.goods_name;
+//	SaveGoodsModel.find({goods_name : goods_name,goods_id : 1},function(err,docs){
+//		//console.log(docs);
+//		res.send(docs);
+//	})
+//})
 router.get('/api/find', function(req, res, next) {
 	var goods_name = req.query.goods_name;
 	SaveGoodsModel.find({goods_name : goods_name,goods_id : 1},function(err,docs){
@@ -154,7 +154,7 @@ router.post('/api/updateGood', function(req, res, next) {
 		var is_best = body.is_best[0];
 		var is_new = body.is_new[0];
 		var is_hot = body.is_hot[0];
-		
+
 		SaveGoodsModel.update({goods_name : goods_name,goods_id : 1},{goods_sn : goods_sn,goods_img:goods_img,shop_price:shop_price,virtual_sales:virtual_sales,goods_number:goods_number,is_best:is_best,is_new:is_new,is_hot:is_hot},function(err){
 			if(err) {
 					result.code = -109;
@@ -164,5 +164,12 @@ router.post('/api/updateGood', function(req, res, next) {
 		})
 	})
 });
-
+router.get('/api/keyword', function(req, res, next) {
+	var reg = req.query.keyword;
+	console.log(reg)
+	SaveGoodsModel.find({$or : [{goods_name : {$regex : reg}},{goods_sn : {$regex : reg}}]},function(err,docs){
+		res.send(docs);
+		console.log(docs)
+	})
+})
 module.exports = router;

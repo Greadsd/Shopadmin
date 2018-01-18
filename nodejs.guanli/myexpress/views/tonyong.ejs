@@ -462,6 +462,7 @@
 		$(".tab-div #tabbar-div p span:lt(5)").each(function(index,value){
 			$(this).click(function(){
 				//console.log(index);
+				$(this).css({background : "#fff"}).siblings().css({background : "none"})
 				$(".tab-div #divlist >div").eq(index).css({display : "block"}).siblings().css({display : "none"});
 				$(".tab-div #divlist .button-div").css({display : "block"});
 			})
@@ -484,12 +485,14 @@
 			
 			var xhr = new XMLHttpRequest();
 			xhr.open("POST","/api/saveGood");
-			xhr.onreadystatechange = function(){
+			xhr.onreadystatechange = function(res){
 				if(xhr.readystate == 4 && xhr.status == 200){
 					console.log(xhr.responseText);
 					var res = JSON.parse(xhr.responseText);
 					alert(res.message);
+					
 				}
+				location.href = "./shoplist";
 			}
 			xhr.send(form);
 			

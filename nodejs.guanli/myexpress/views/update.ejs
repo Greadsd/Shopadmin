@@ -459,9 +459,12 @@
 	<script type="text/javascript" src="/javascripts/jquery-1.11.3.js" ></script>
 	<script type="text/javascript" src="/javascripts/update.js" ></script>
 	<script type="text/javascript">
+
+		
 		$(".tab-div #tabbar-div p span:lt(5)").each(function(index,value){
 			$(this).click(function(){
 				//console.log(index);
+				$(this).css({background : "#fff"}).siblings().css({background : "none"})
 				$(".tab-div #divlist >div").eq(index).css({display : "block"}).siblings().css({display : "none"});
 				$(".tab-div #divlist .button-div").css({display : "block"});
 			})
@@ -506,6 +509,7 @@
 					var res = JSON.parse(xhr.responseText);
 					alert(res.message);
 				}
+				location.href = "./shoplist";
 			}
 			xhr.send(form);
 			

@@ -116,7 +116,8 @@ section {
         cursor: pointer; }
         section .left #menu-list li a {
           display: block;
-          width: 100%; }
+          width: 100%;
+          color: #FFFFFF; }
         section .left #menu-list li .menu-item {
           font-size: 12px;
           height: 30px;

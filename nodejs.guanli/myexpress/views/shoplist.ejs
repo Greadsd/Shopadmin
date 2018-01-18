@@ -40,8 +40,8 @@
 							<option value="0">全部</option>
 						</select>
 						关键字
-						<input name="keyword" size="15" type="text">
-						<input value=" 搜索 " class="button" type="submit">
+						<input id="keyword" size="15" type="text">
+						<input id="search" value=" 搜索 " class="button" type="button">
 					</form>
 				</div>
 				
@@ -82,14 +82,14 @@
 							                         总计  <span id="totalRecords"></span>
 							                        个记录分为 <span id="totalPages"></span>
 								            页当前第 <span id="pageCurrent">1</span>
-								            页，每页 <input size="3" id="pageSize" value="4" onkeypress="" type="text">
+								            页，每页 <input size="3" id="pageSize" value="15" onkeypress="" type="text">
 								        <span id="page-link">
-								          <a class="zore" href="#">第一页</a>
-								          <a class="jian" href="#">上一页</a>
-								          <a class="jia" href="#">下一页</a>
-								          <a href="#">最末页</a>
-								          <select id="gotoPage" onchange="#">
-								            <option value="1">1</option>          										  </select>
+								          <a class="zore" href="javascript:;">第一页</a>
+								          <a class="jian" href="javascript:;">上一页</a>
+								          <a class="jia" href="javascript:;">下一页</a>
+								          <a class="last" href="javascript:;">最末页</a>
+								          <select id="gotoPage">
+								          </select>
 								        </span>
 							      </div>
 							</div>
@@ -123,5 +123,4 @@
 	<script type="text/javascript" src="/javascripts/jquery-1.11.3.js" ></script>
 	<script type="text/javascript" src="/javascripts/update.js" ></script>
 	<script type="text/javascript" src="javascripts/getgoods.js" ></script>
-	
 </html>
