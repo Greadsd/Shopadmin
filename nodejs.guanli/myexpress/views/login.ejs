@@ -28,9 +28,9 @@
 			        </div>
 			        <div class="controls third active">
 			            <svg class="iconphone" width="20px" height="20px" viewBox="0 0 20 20"></svg>
-			            <input name="captcha" class="capital" placeholder="验证码" type="text">
-			            <div class="" style="position: absolute; right: 8px; top: 8px;" id="number_div">
-			            	<img src="" alt="CAPTCHA" onclick="" style="cursor: pointer;" title="换一张" width="102" border="1" height="34">
+			            <input id="captcha" class="capital" placeholder="验证码" type="text">
+			            <div class="" style="position: absolute; right: 8px; top: 8px;" id="v_container">
+			  
 			           </div>
 			        </div>
 			        <div class="controls last">
@@ -47,25 +47,50 @@
 	 	</div>
 	</body>
 	<script type="text/javascript" src="/javascripts/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="/javascripts/gVerify.js" ></script>
 	<script type="text/javascript">
+		$("#username").blur(function(){
+			var str = $(this).val();
+			var reg = /^[a-zA-Z]\w{4,}$/g;
+			if(reg.test(str) == false){
+				alert("用户名不能小于5位");
+			}
+		})
+		$("#password").blur(function(){
+			var st = $(this).val();
+			console.log(st)
+//			var tt = /^\w+&/g;
+//			if(tt.test(st) == false){
+//				alert("密码错误！");
+//			}
+		})
+		
+		var verifyCode = new GVerify("v_container");
+		
+
 		function login(){
-			$.ajax({
-				type:"get",
-				url:"/api/login",
-				data : {
-					username : username = $("#username").val(),
-					pwd : $("#password").val(),
-				},
-				success : function(res){
-					if(res.code == -109){
-						alert(res.message)
-					}else if(res.code == 1){
-						alert(res.message);
-						location.href = "loginAction";
+			var res = verifyCode.validate(document.getElementById("captcha").value);
+			if(res){
+				$.ajax({
+					type:"get",
+					url:"/api/login",
+					data : {
+						username : username = $("#username").val(),
+						pwd : $("#password").val(),
+					},
+					success : function(res){
+						if(res.code == -109){
+							alert(res.message)
+						}else if(res.code == 1){
+							alert(res.message);
+							location.href = "loginAction";
+						}
+						console.log(res);
 					}
-					console.log(res);
-				}
-			});
+				});
+			}else{
+				alert("验证码错误");
+			}
 		}
 	</script>
 </html>

@@ -1,4 +1,4 @@
-var arr ;
+
 function up(){
 	setTimeout(function(){
 		$("#list #listDiv table tbody tr:gt(0)").each(function(index,value){

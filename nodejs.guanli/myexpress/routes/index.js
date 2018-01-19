@@ -87,7 +87,7 @@ router.post('/api/saveGood', function(req, res, next) {
 		})
 	})
 });
-
+//分页获取信息
 router.get('/api/getgood', function(req, res, next) {
 	var cont = parseInt(req.query.cont) - 1;
 	var pageSize = parseInt(req.query.pageSize);
@@ -96,7 +96,7 @@ router.get('/api/getgood', function(req, res, next) {
 		res.send(docs);
 	}).limit(pageSize).skip(cont * pageSize);
 });
-
+//获取总信息数
 router.get('/api/sum', function(req, res, next) {
 	SaveGoodsModel.find({goods_id : 1},function(err,docs){
 		//console.log(docs.length);

@@ -63,7 +63,6 @@ function list(){
 		$("#gotoPage").append(op);
 	}
 }
-
 //鼠标失焦 	设置每页多少信息
 $("#pageSize").blur(function(){
 	$("#list #listDiv table tbody tr:gt(0)").each(function(index,value){
@@ -78,7 +77,6 @@ $("#pageSize").blur(function(){
 
 //获取数据，并且在页面动态生成信息
 function getgood(num,pageSize){
-	
 	$.ajax({
 		type:"get",
 		url:"/api/getgood",
